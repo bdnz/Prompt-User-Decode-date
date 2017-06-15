@@ -1,13 +1,13 @@
-TITLE CS2810 Assembler Assignment Template
 
-; Student Name: Deniz Burak
-; Assignment Due Date: Sunday by 11:59pm (16 Nov)
+
+;Deniz Burak
+
 
 INCLUDE Irvine32.inc
 .data
 	;--------- Enter Data Here
-	vSemester BYTE "CS280 Fall Semeter 2014",0
-	vAssignment BYTE "Assembler Assignment #2",0
+	vSemester BYTE "String Number One",0
+	vAssignment BYTE "String Number Two",0
 	vName BYTE "Deniz Burak",0
 	vOutPut BYTE "Please enter your number in hexa:",0
 	vTimeFieled BYTE "--:--:--",0
@@ -22,14 +22,14 @@ main PROC
 	mov dl, 0
 	call gotoxy
 
-	mov edx, offset vSemester
+	mov edx, offset vSem
 	call WriteString
 
 	mov dh, 8
 	mov dl, 0
 	call gotoxy
 
-	mov edx, offset vAssignment
+	mov edx, offset vOdev
 	call WriteString
 
 	mov dh, 9
